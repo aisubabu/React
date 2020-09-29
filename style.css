@@ -1,17 +1,17 @@
 @font-face {
-    src: url(dk_innuendo/DK\ Innuendo.otf);
+    src: url(Innuendo.otf);
     font-family: innuendo;
 }
 @font-face {
-    src: url(lato/Lato-Thin.ttf);
+    src: url(Lato-Thin.ttf);
     font-family: lato;
 }
 @font-face {
-    src: url(Secret-Typewriter/veteran_typewriter.ttf);
+    src: url(veteran_typewriter.ttf);
     font-family: typewriter;
 }
 @font-face {
-    src: url(poppins/Poppins-Regular.otf);
+    src: url(Poppins-Regular.otf);
     font-family: Poppins;
 }
 .bgimg {
