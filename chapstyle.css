@@ -1,17 +1,17 @@
 @font-face {
-    src: url(dk_innuendo/DK\ Innuendo.otf);
+    src: url(Innuendo.otf);
     font-family: innuendo;
 }
 @font-face {
-    src: url(lato/Lato-Regular.ttf);
+    src: url(Lato-Regular.ttf);
     font-family: lato;
 }
 @font-face {
-    src: url(lato/Lato-Thin.ttf);
+    src: url(Lato-Thin.ttf);
     font-family: latothin;
 }
 @font-face {
-    src: url(aleo/Aleo/Aleo-Regular.otf);
+    src: url(Aleo-Regular.otf);
     font-family: Aleo;
 }
 *{
