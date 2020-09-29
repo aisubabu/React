@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="chapstyle.css">
+    <link rel="icon" href="800px-React-icon.svg.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Chapters</header>
+        <ul>
+            <li><a href="chap1.html"><i class="fas fa-code"></i>create-react-app</a></li>
+            <li><a href="chap2.html"><i class="fas fa-code"></i>Folder Structure</a></li>
+            <li><a href="chap3.html"><i class="fas fa-code"></i>Components</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Settings</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Features</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>About us</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Languages</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Contact us</a></li>
+        </ul> 
+    </div>
+    <div class="container content">
+        <h1>create-react-app</h1>
+        <img src="img1.PNG" class="img-responsive imgstyle" alt="">
+        <h3>In this chapter we are going to build our first react application</h3>
+        <p class="notebox">Note: Make sure node.js is downloaded and installed. Also you can use any code editor, in this tutorial I'm going to be using visual studio code.<p>
+        <h6>Step by step instructions</h6>
+        <div class="row instructions">
+            <p>1. Once Node.js is set-up, let's create a folder in the drive where the project files needed to be saved and open that folder in the Vscode.</p>
+            <p>2. The next step is to open a new terminal in Vscode. Here's where the magic brews.</p>
+            <p>3. Now to create a new react app, we'll be making use creat-react-app, which is a command-line interface tool which allows us to create and run react applications with no configuration.</p>
+            <div class="alert alert-success code">
+                <p style="text-align: center; color: #777">npm create-react-app myproject.</p>
+            </div>
+            <p>4. Now with this, an entire react project is created. Note: myproject is the name of the app.</p>
+            <p>5. Once the app is ready, it should look something like this:</p>
+            <img src="capture1.PNG" class="img-responsive imgstyle" alt="">
+            <p>6. The next step is to run this application on the browser. Let's first navigate inside the project, using the command, 'cd myproject' and then the command 'npm start'.</p>
+            <div class="alert alert-success code">
+                <p style="text-align: center; color: #777">cd myproject <br> npm start</p>
+            </div>
+            <p>7. This command runs the code on the browser under localhost:3000. And the result should look something like this:</p>
+            <img src="capture2.PNG" class="img-responsive imgstyle" alt="">
+            <p>8. As the instructions suggest, let's edit App.js under the src folder.</p>
+            <p>9. By editing the App.js folder, we can bring the desired application. Here I have edited it to 'Hello World'.</p>
+            <h5>Thus, in less than 10 steps, we have created our very first react application.
+            In the next chapter, let's discuss more on the application's folder structure.</h5>
+        </div>
+    </div>
+</body>
+</html>

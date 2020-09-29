@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    <link rel="stylesheet" href="chapstyle.css">
+    <link rel="icon" href="800px-React-icon.svg.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Chapters</header>
+        <ul>
+            <li><a href="chap1.html"><i class="fas fa-code"></i>create-react-app</a></li>
+            <li><a href="chap2.html"><i class="fas fa-code"></i>Folder Structure</a></li>
+            <li><a href="chap3.html"><i class="fas fa-code"></i>Components</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Settings</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Features</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>About us</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Languages</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Contact us</a></li>
+        </ul> 
+    </div>
+    <div class="container content">
+        <h1>Components</h1>
+        <img src="img3.PNG" class="img-responsive imgstyle" alt="">
+        <h3>In this chapter we'll have a closer look into Components and it's types.</h3>
+        <div class="row instructions">
+            <h5>As we have seen from the first chapter, React is a component-based library, but what exactly is a Component? <br> Let's find that out in this chapter. </h5>
+            <h5>In React a Component represents a part of the user experience.</h5>
+            <h5>In the above image, each block is a separate Component and can be reused again anywhere inside the application.
+            In React, we also use one more important Component, the 'App.js' Component as the "root" to contain all the other Components. </h5>
+            <h5>These Components are common JavaScript functions that are highly reusable, as they can be used with different properties, to display different information.</h5>
+            <h5>We have two Component types, Functional Component and Class Component.</h5>
+            <h6>Functional Component</h6>
+            <p>Functional Components are just JavaScript functions. They receive properties, which is often refered to as props and return HTML which describes the UI.</p>
+            <p>Let's try to create a Functional Component.</p>
+            <p>1. Let's start by creating a JavaScript file by the name Function.js. Keep in mind to Capitalise the first letter of the file name.</p>
+            <p>2. The next step is to import React. Not just React, any Component we create that will be used in this function needs to imported.</p>
+            <div class="alert alert-success files">
+                import React from 'react'
+            </div>
+            <img src="capture12.PNG" class="img-responsive imgstyle" alt="">
+            <p class="notebox">In 'export default function' <b>function</b> denotes the name of the file.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@font-face {
+    src: url(dk_innuendo/DK\ Innuendo.otf);
+    font-family: innuendo;
+}
+@font-face {
+    src: url(lato/Lato-Regular.ttf);
+    font-family: lato;
+}
+@font-face {
+    src: url(lato/Lato-Thin.ttf);
+    font-family: latothin;
+}
+@font-face {
+    src: url(aleo/Aleo/Aleo-Regular.otf);
+    font-family: Aleo;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    background: #ebafa7;
+    transition: all .5s ease;
+}
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #dda59d;
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255, 255, .5);
+    transition: .4s;
+}
+ul li a:hover {
+    padding-left: 50px;
+}
+.sidebar ul a i {
+    margin-right: 16px;
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px ;
+}
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1111;
+    top: 17px;
+    left: -195px;
+    font-size: 30px;
+    color:#ebafa7;
+    padding: 4px 9px;
+    transition: all .5s ;
+}
+#check:checked ~ .sidebar {
+    left: 0px;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0px;
+    pointer-events: none;
+    display: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+.content h1 {
+    text-align: center;
+    font-family: innuendo !important;
+    font-size: 48px !important;
+    color: rgb(131, 106, 106) !important;
+}
+.imgstyle {
+    padding: 30px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content h3 {
+    font-family: Aleo;
+    text-align: left;
+    color: #343a40;
+    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.notebox {
+    border: 1px solid rgb(131, 106, 106) ;
+    padding: 15px 25px !important;
+    border-radius: 15px;
+    margin: 30px 40px !important;
+}
+.content h6 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #73736f;
+    margin: 0px;
+    padding: 20px 0px;
+    font-family: Aleo;
+}
+.instructions {
+    padding: 25px 0px;
+    margin: 0px !important;
+    font-family: latothin;
+    font-weight: bolder !important;
+}
+.content p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #444;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+.code {
+    width: 350px;
+    margin: 25px auto;
+}
+.content h5 {
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.files {
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 15px !important;
+    margin-right: 12px;
+    margin-top: 20px;
+}

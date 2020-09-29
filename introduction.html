@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="icon" href="800px-React-icon.svg.png">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class=" container intro">
+        <img src="800px-React-icon.svg.png" class="img-circle size" alt="">
+        <p>Let's get started</p>           
+    </div>
+    <br>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="chap1.html"><img src="chap1.jpeg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="chap2.jpeg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="chap1.jpeg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="chap1.jpeg" alt=""></a></div>
+        </div>
+      </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</html>

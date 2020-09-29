@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2</title>
+    <link rel="stylesheet" href="chapstyle.css">
+    <link rel="icon" href="800px-React-icon.svg.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Chapters</header>
+        <ul>
+            <li><a href="chap1.html"><i class="fas fa-code"></i>create-react-app</a></li>
+            <li><a href="chap2.html"><i class="fas fa-code"></i>Folder Structure</a></li>
+            <li><a href="chap3.html"><i class="fas fa-code"></i>Components</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Settings</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Features</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>About us</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Languages</a></li>
+            <li><a href="#"><i class="fas fa-code"></i>Contact us</a></li>
+        </ul> 
+    </div>
+    <div class="container content">
+        <h1>Folder Structure</h1>
+        <img src="img2.PNG" class="img-responsive imgstyle" alt="">
+        <h3>In this chapter, let's look into the files and folders that are created and how the command flows.</h3>
+        <div class="row instructions">
+            <h5>From the last chapter, we know that when the command 'npm create-react-app' is run, an entire project is created and would look something like this:</h5>
+            <img src="Capture.PNG" class="img-responsive imgstyle" alt="">
+            <h5>As you can see, there are 3 folders namely node_modules, public and src and 4 files namely gitignore, package-lock.json, package.json and README.md</h5>
+            <h5>Among these, let's discuss deeply on 4 important files.</h5>
+            <div class="alert alert-success files">
+                package.json
+            </div>
+            <div class="alert alert-success files">
+                index.html
+            </div>
+            <div class="alert alert-success files">
+                index.js
+            </div>
+            <div class="alert alert-success files">
+                App.js
+            </div>
+            <h6><u>1. package.json </u></h6>
+            <p>This file containes the dependencies and the script needed for the project.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="capture4.PNG" class="img-responsive imgstyle" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="capture5.PNG" class="img-responsive imgstyle" alt="">
+                </div>
+            </div>
+            <p>Here as you can see, we are using react version 16.13, which is under dependencies. We can add more dependencies by installing the necessary ones using npm, which we'll be seeing in the upcoming chapters. <br> As of scripts, we have scripts to run, build and run tests.</p>
+            <h6><u>2. index.html</u></h6>
+            <p>This is going to be the only the HTML you'll use in the whole react application. The idea is to build a single page HTML, and the view is going to change dynamically in the browser.</p>
+            <img src="capture9.PNG" class="img-responsive imgstyle" alt="">
+            <p>We are not going to add any code to this file. We want React to control how the application is going to look like. To make that possible, we are going to have one div tag, with a specific id. Now React takes over this id and is responsible for the UI of the application.</p>
+            <h6><u>3. index.js</u></h6>
+            <p>This is going to be the starting point of our React application. Here the root component is specified which is 'App' component and the DOM element, which is also the id name in 'index.html'.</p>
+            <img src="capture10.PNG" class="img-responsive imgstyle" alt="">
+            <p>Here the id name is 'root'. This element will be completely controlled by React through the component 'App'.</p>
+            <h6><u>4. App.js</u></h6>
+            <p>React just like any javascript file works using a function, and this function, in turn, decides the UI of the application.</p>
+            <img src="capture11.PNG" class="img-responsive imgstyle" alt="">
+            <p>Along with this 'App.js' also has an 'App.css' which helps with the styling of the application.</p>
+            <h6>Let's now see how the command-line flows.</h6>
+            <h5>When you run the command 'npm start', index.html is served in the browser. index.html contains the root DOM node. From there, the control enters index.js where ReactDOM renders the App component onto the root element. The App component contains the HTML, which is ultimately displayed in the browser.</h5>
+            <h5>By now, we have mentioned component several times already, in the next chapter, let's talk about components in detail.</h5>
+        </div>
+    </div>
+</body>
+</html>
